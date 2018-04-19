@@ -54,8 +54,13 @@ export class DishdetailPage {
 
   openComment() {
     let modal = this.modalCtrl.create(CommentPage);
-    modal.onDidDismiss(data => {
-     this.dish.comments.push(data);
+    modal.onDidDismiss(comment => {
+      if (comment === undefined) {
+       console.log("comment cancelled");
+     }
+     else{
+       this.dish.comments.push(comment);
+     }
    });
     modal.present();
   }
