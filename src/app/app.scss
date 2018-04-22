@@ -14,3 +14,12 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+$lt-gray: #ddd;
+$background-dark: #512DA8;
+$backgound-light: #9575CD;
+$backgound-pale: #D1C4E9;
+
+.backgound-pale {
+  background-color: $backgound-pale;
+}
