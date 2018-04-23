@@ -22,6 +22,7 @@
     "@angular/platform-browser": "5.2.9",
     "@angular/platform-browser-dynamic": "5.2.9",
     "@ionic-native/core": "4.6.0",
+    "@ionic-native/email-composer": "^4.7.0",
     "@ionic-native/local-notifications": "^4.7.0",
     "@ionic-native/splash-screen": "4.6.0",
     "@ionic-native/status-bar": "4.6.0",
@@ -32,6 +33,7 @@
     "cordova-ios": "4.5.4",
     "cordova-plugin-app-event": "^1.2.1",
     "cordova-plugin-device": "^2.0.2",
+    "cordova-plugin-email": "^1.2.7",
     "cordova-plugin-ionic-keyboard": "^2.0.5",
     "cordova-plugin-ionic-webview": "^1.2.0",
     "cordova-plugin-splashscreen": "^5.0.2",
@@ -55,7 +57,8 @@
       "cordova-plugin-splashscreen": {},
       "cordova-plugin-ionic-webview": {},
       "cordova-plugin-ionic-keyboard": {},
-      "de.appplant.cordova.plugin.local-notification": {}
+      "de.appplant.cordova.plugin.local-notification": {},
+      "cordova-plugin-email": {}
     },
     "platforms": [
       "android",
