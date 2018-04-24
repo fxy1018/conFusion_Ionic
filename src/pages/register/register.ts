@@ -49,16 +49,18 @@ export class RegisterPage {
       targetWidth: 100,
       correctOrientation: true,
       allowEdit: true,
-      destinationType: this.camera.DestinationType.FILE_URI,
-      encodingType: this.camera.EncodingType.PNG,
+      destinationType: this.camera.DestinationType.DATA_URL,
+      encodingType: this.camera.EncodingType.JPEG,
       mediaType: this.camera.MediaType.PICTURE,
       cameraDirection: this.camera.Direction.FRONT
     }
-    this.camera.getPicture(options)
-      .then((imageData) => {
-        this.image = imageData;
-      },
-      (err) => {console.log('Error obtaining picture')});
+    this.camera.getPicture(options).then((imageData) => {
+
+      this.image = 'data:image/jpeg;base64,' + imageData;
+      console.log(imageData);
+    }, (err) => {
+        console.log('Error obtaining picture')
+    });
   }
 
   onSubmit() {
